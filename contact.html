@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes College Kot Sultan 👨‍💻</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="download.svg ">
+
+    <style>
+        body {
+            background-color: #808080;
+            /* Gray background */
+            color: #fff;
+        }
+
+        .custom-nav {
+            background-color: #878dc4;
+        }
+
+        .form-container {
+            background-color: #2f2f2f;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-container input,
+        .form-container textarea {
+            background-color: #555;
+            color: #fff;
+            border: 1px solid #999;
+        }
+
+        .form-container input::placeholder,
+        .form-container textarea::placeholder {
+            color: #ddd;
+        }
+
+        .btn-primary {
+            background-color: #878dc4;
+            border-color: #878dc4;
+        }
+
+        .btn-primary:hover {
+            background-color: #6b73a3;
+            border-color: #6b73a3;
+        }
+
+        h1,
+        h2 {
+            color: #fff;
+        }
+
+        h2 {
+            background-color: #2F2F2F;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #808080;
+            color: #ccc;
+            padding: 30px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: none;
+            font-size: large;
+        }
+
+        /* Map styling */
+        .map-container {
+            height: 100%;
+            min-height: 300px;
+            border-radius: 15px;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                margin-bottom: 20px;
+            }
+        }
+
+        .form-container,
+        .map-container {
+            min-height: 500px;
+            /* Minimum height to make both columns same size */
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .row.align-items-stretch {
+            align-items: stretch;
+            /* Make both columns equal height */
+        }
+    </style>
+</head>
+
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark  custom-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="ChatGPT Image Jan 20, 2026, 02_49_54 PM.png" alt="Bootstrap" width="130" height="85">
+            </a>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contact US
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="contact.html">Email</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Phone</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="address.html">Address</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success text-white border border-white" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <div class="py-5 text-center rounded-3 mb-4" style="background-color: #808080;">
+        <h1 class="display-5 fw-bold">Contact Us</h1>
+    </div>
+
+   <div class="container marketing">
+    <div class="row justify-content-center align-items-stretch">
+        <!-- Contact Form Column -->
+        <div class="col-lg-6 mb-4 d-flex">
+            <div class="form-container w-100 d-flex flex-column">
+                <h2 class="mb-4 text-center">Get in Touch</h2>
+                <form class="flex-grow-1 d-flex flex-column">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3 flex-grow-1">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control h-100" id="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="d-grid mt-2">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Map Column -->
+        <div class="col-lg-6 mb-4 d-flex">
+            <div class="map-container w-100">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.4256987638774!2d70.93042831500845!3d30.769397698368286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39250fe234613295%3A0x691ad25a66d9cd8b!2sCodes%20College!5e0!3m2!1sen!2s!4v1705812345678!5m2!1sen!2s"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>Built by @Codes College Kot Sultan</p>
+        <p class="mb-0"><a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
